@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
-    public Animator animator;
+    // public Animator animator;
 
     private float horizontal;
     private float speed = 8f;
@@ -29,7 +29,7 @@ public class playerMovement : MonoBehaviour
     void Update()
     {
                 
-        animator.SetFloat("Speed", Mathf.Abs(horizontal));
+        // animator.SetFloat("Speed", Mathf.Abs(horizontal));
         
         horizontal = Input.GetAxisRaw("Horizontal");
         
@@ -63,10 +63,10 @@ public class playerMovement : MonoBehaviour
         }
     
 
-public void OnLanding()
-        {
-            animator.SetBool("IsJumping", false);
-        }
+    // public void OnLanding()
+    //         {
+    //             animator.SetBool("IsJumping", false);
+    //         }
     public void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
