@@ -11,7 +11,7 @@ public class ChickenPickup : MonoBehaviour
     [SerializeField] private Text chickenText;
     private void OnTriggerEnter2D(Collider2D other)
     {
-          if(other.gameObject.CompareTag("Chicken"))
+        if(other.gameObject.CompareTag("Chicken"))
         {
             Destroy(other.gameObject);
             chicken++;

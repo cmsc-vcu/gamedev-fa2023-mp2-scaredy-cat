@@ -88,11 +88,11 @@ public class playerMovement : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.tag == "Bird")
-        {
-            transform.position = respawnPoint;
-        }
-    }
+    // private void OnTriggerEnter2D(Collider2D collision)
+    // {
+    //     if(collision.tag == "Bird")
+    //     {
+    //         transform.position = respawnPoint;
+    //     }
+    // }
 }
