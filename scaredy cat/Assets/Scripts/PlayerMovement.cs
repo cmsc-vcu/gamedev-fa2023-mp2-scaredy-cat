@@ -39,25 +39,25 @@ public class playerMovement : MonoBehaviour
         //     doubleJump = false;
         // }
 
-        // if(Input.GetButtonDown("Jump"))
-        // {
-        //     // animator.SetBool("IsJumping", true);
+        if(Input.GetButtonDown("Crouch"))
+        {
+            animator.SetBool("IsCrouching", true);
             
-        //     if (IsGrounded() || doubleJump)
+            // if (IsGrounded() || doubleJump)
             
-        //     {
-        //         rb.velocity = new Vector2(rb.velocity.x, doubleJump ? doubleJumpingPower : jumpingPower);
+            // {
+            //     rb.velocity = new Vector2(rb.velocity.x, doubleJump ? doubleJumpingPower : jumpingPower);
 
-        //         doubleJump = !doubleJump;
-        //     }
+            //     doubleJump = !doubleJump;
+            // }
             
             
-        // }
+        }
 
-        // if(Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
-        // {
-        //     rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
-        // }
+        if(Input.GetButtonUp("Crouch"))
+        {
+            animator.SetBool("IsCrouching", false);
+        }
         
         Flip();
         }
@@ -67,6 +67,8 @@ public class playerMovement : MonoBehaviour
     //         {
     //             animator.SetBool("IsJumping", false);
     //         }
+
+
     public void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
