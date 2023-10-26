@@ -8,9 +8,9 @@ public class playerMovement : MonoBehaviour
 
     private float horizontal;
     private float speed = 8f;
-    private float jumpingPower = 16f;
+    // private float jumpingPower = 16f;
     private bool isFacingRight = true;
-    private bool doubleJump;
+    // private bool doubleJump;
 
     private Vector4 respawnPoint;
 
@@ -19,7 +19,7 @@ public class playerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
 
     [SerializeField] private Transform fallDetector;
-    private float doubleJumpingPower = 12f;
+    // private float doubleJumpingPower = 12f;
     void Start()
     {
         respawnPoint = transform.position;
@@ -34,14 +34,14 @@ public class playerMovement : MonoBehaviour
         horizontal = Input.GetAxisRaw("Horizontal");
         
 
-        if (IsGrounded() && !Input.GetButton("Jump"))
-        {
-            doubleJump = false;
-        }
+        // if (IsGrounded() && !Input.GetButton("Jump"))
+        // {
+        //     doubleJump = false;
+        // }
 
         // if(Input.GetButtonDown("Jump"))
         // {
-        //     animator.SetBool("IsJumping", true);
+        //     // animator.SetBool("IsJumping", true);
             
         //     if (IsGrounded() || doubleJump)
             
@@ -54,10 +54,10 @@ public class playerMovement : MonoBehaviour
             
         // }
 
-        if(Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
-        }
+        // if(Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
+        // {
+        //     rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+        // }
         
         Flip();
         }
@@ -88,11 +88,11 @@ public class playerMovement : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.tag == "Spikes")
-        {
-            transform.position = respawnPoint;
-        }
-    }
+    // private void OnTriggerEnter2D(Collider2D collision)
+    // {
+    //     if(collision.tag == "Bird")
+    //     {
+    //         transform.position = respawnPoint;
+    //     }
+    // }
 }
