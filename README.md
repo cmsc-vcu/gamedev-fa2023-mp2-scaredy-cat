@@ -15,7 +15,7 @@ Tiffany Pham
 Coding By:
 Adrienne Salkey
 
-Demo: <>
+Demo: <https://play.unity.com/mg/other/webgl-builds-376685>
 
 Bugs:
 Transitions to dialogue sceeens aren't working properly
