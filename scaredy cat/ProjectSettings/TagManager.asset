@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Chicken
+  - Character1
+  - Gifts
+  - Bird
   layers:
   - Default
   - TransparentFX

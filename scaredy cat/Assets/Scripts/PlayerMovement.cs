@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerMovement : MonoBehaviour
 {
@@ -90,11 +91,11 @@ public class playerMovement : MonoBehaviour
         }
     }
 
-    // private void OnTriggerEnter2D(Collider2D collision)
-    // {
-    //     if(collision.tag == "Bird")
-    //     {
-    //         transform.position = respawnPoint;
-    //     }
-    // }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Bird")
+        {
+            SceneManager.LoadScene("BadEnd");
+        }
+    }
 }

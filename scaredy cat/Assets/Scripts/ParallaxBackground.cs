@@ -12,7 +12,7 @@ public class ParallaxBackground : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cam = GameObject.Find("CinCam");
+        cam = GameObject.Find("Main Camera");
         startPos = transform.position.x;
         length = gameObject.GetComponent<SpriteRenderer>().bounds.size.x;
     }
