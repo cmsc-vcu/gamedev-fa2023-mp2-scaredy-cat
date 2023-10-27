@@ -1,6 +1,23 @@
-# gamedev-fa2023-mp2-template
+Minor Project 2 
 
-This is a template repo for Intro to Game Dev, Fall 2023, Minor Project 2.
-See:
-  <https://virginiacommonwealth.instructure.com/courses/86151/assignments/735642>
-  
+Scaredy Cat
+
+Follow Scaredy Cat as he travels through the dark field to reach the forest. 
+Along the way, he encounters strange creatures, mysterious moons, and cursed chicken bones. 
+
+Left arrow = Move Left
+Right Arrow = Move Right
+Down Arrow = Crouch
+
+Art By:
+Tiffany Pham
+
+Coding By:
+Adrienne Salkey
+
+Demo: <>
+
+Bugs:
+Transitions to dialogue sceeens aren't working properly
+
+Bird won't collide with Player to result in a death screen.
