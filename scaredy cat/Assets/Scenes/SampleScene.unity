@@ -291,7 +291,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.8069916, y: 0.31619978}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -302,7 +302,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 10.594244, y: 16.990685}
   m_EdgeRadius: 0
 --- !u!212 &24048968
 SpriteRenderer:
@@ -440,8 +440,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 99, y: -31}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 126.16672, y: -51.37503}
+  m_SizeDelta: {x: 214.3334, y: 70.7501}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &50476840
 MonoBehaviour:
@@ -548,8 +548,8 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 1
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -642,6 +642,7 @@ GameObject:
   - component: {fileID: 179441502}
   - component: {fileID: 179441501}
   - component: {fileID: 179441500}
+  - component: {fileID: 179441506}
   m_Layer: 0
   m_Name: Enemy (1)
   m_TagString: Bird
@@ -744,7 +745,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.44484997}
+  m_Offset: {x: 0, y: 0.29895163}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -755,7 +756,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 9.8897}
+  m_Size: {x: 10, y: 8.402097}
   m_EdgeRadius: 0
 --- !u!212 &179441504
 SpriteRenderer:
@@ -818,12 +819,24 @@ Transform:
   m_GameObject: {fileID: 179441499}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 247.4, y: 10.699999, z: 0}
+  m_LocalPosition: {x: 248.19998, y: 14.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &179441506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179441499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b8168905810c649a2a92ff1bc8f470, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &192182481
 GameObject:
   m_ObjectHideFlags: 0
@@ -2343,6 +2356,7 @@ GameObject:
   - component: {fileID: 1170696020}
   - component: {fileID: 1170696019}
   - component: {fileID: 1170696024}
+  - component: {fileID: 1170696025}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Bird
@@ -2430,7 +2444,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.44484997}
+  m_Offset: {x: 0, y: 0.23497057}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2441,7 +2455,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 9.8897}
+  m_Size: {x: 10, y: 8.530059}
   m_EdgeRadius: 0
 --- !u!212 &1170696022
 SpriteRenderer:
@@ -2504,7 +2518,7 @@ Transform:
   m_GameObject: {fileID: 1170696018}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 112.4, y: 11.5, z: 0}
+  m_LocalPosition: {x: 113.5, y: 14.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2525,6 +2539,18 @@ MonoBehaviour:
   pointA: {fileID: 1517230368}
   pointB: {fileID: 2142161070}
   speed: 6
+--- !u!114 &1170696025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170696018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b8168905810c649a2a92ff1bc8f470, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1178520083
 GameObject:
   m_ObjectHideFlags: 0
@@ -3894,7 +3920,7 @@ GameObject:
   - component: {fileID: 1745473231}
   - component: {fileID: 1745473230}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Scarecrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3956,7 +3982,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
