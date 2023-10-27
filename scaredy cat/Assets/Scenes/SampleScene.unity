@@ -870,7 +870,6 @@ Transform:
   m_Children:
   - {fileID: 1893654775}
   - {fileID: 1195001535}
-  - {fileID: 1148723662}
   - {fileID: 1357479585}
   m_Father: {fileID: 1483144591}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1728,7 +1727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0edf62f49e0173a40b733954f1becd04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointA: {fileID: 1634253668}
+  pointA: {fileID: 1517230368}
   pointB: {fileID: 2142161070}
   speed: 6
 --- !u!1 &1178520083
@@ -1932,8 +1931,6 @@ Transform:
   m_Children:
   - {fileID: 1488842195}
   - {fileID: 1178520084}
-  - {fileID: 1517230369}
-  - {fileID: 1595682120}
   m_Father: {fileID: 1483144591}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1202818136
@@ -2472,8 +2469,6 @@ Transform:
   m_Children:
   - {fileID: 2011456516}
   - {fileID: 836848525}
-  - {fileID: 940559217}
-  - {fileID: 640871356}
   m_Father: {fileID: 1483144591}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1412311660
@@ -2767,7 +2762,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1634253668}
+  m_GameObject: {fileID: 1517230368}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 146.1, y: 13.099999, z: -0.5440639}
@@ -2978,8 +2973,6 @@ Transform:
   m_Children:
   - {fileID: 524863839}
   - {fileID: 1264089163}
-  - {fileID: 608370883}
-  - {fileID: 113749796}
   m_Father: {fileID: 1483144591}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1972879011
@@ -3093,7 +3086,6 @@ Transform:
   m_Children:
   - {fileID: 1339105882}
   - {fileID: 1370947650}
-  - {fileID: 1151031051}
   - {fileID: 1902225423}
   m_Father: {fileID: 1483144591}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3289,5 +3281,7 @@ SceneRoots:
   - {fileID: 1276107735}
   - {fileID: 4740424}
   - {fileID: 192182482}
-  - {fileID: 1480955845}
   - {fileID: 1510795958}
+  - {fileID: 1170696023}
+  - {fileID: 1634253669}
+  - {fileID: 2142161071}
